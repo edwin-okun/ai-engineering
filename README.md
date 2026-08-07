@@ -3,6 +3,9 @@
 Working through an AI engineering syllabus, one lesson per directory. Each lesson is
 small, runnable code that makes a single concept concrete.
 
+Lesson directories are named `NN_snake_case`, so paths need no quoting in the shell and
+stay importable from Python.
+
 ## Setup
 
 The project is managed with [uv](https://docs.astral.sh/uv/) and pinned to Python 3.14.
@@ -16,7 +19,7 @@ uv sync
 ### 01 — Tokenization, context, and cost
 
 ```bash
-uv run "01 tokenization context cost/token_calc.py"
+uv run 01_tokenization_context_cost/token_calc.py
 ```
 
 Encodes example strings with `tiktoken`'s `cl100k_base` encoding and prints the
